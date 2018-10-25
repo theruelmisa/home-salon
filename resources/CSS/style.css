@@ -2,18 +2,26 @@
 /*------------GLOBAL SETUP-------------------*/
 /*-------------------------------------------*/
 
-* {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html {
+    /* Set the root font-size to a percentage in case of user browser change . This is 10px */
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Krub', sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 400;
     line-height: 1.4;
-    padding: 30px;
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 a {
@@ -41,12 +49,12 @@ li {
 
 .logo-container {
     position: absolute;
-    top: 4%;
-    left: 4%;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 70px;
+    height: 7rem;
 }
 
 .headline-container {
@@ -65,7 +73,7 @@ li {
 .headline {
     color: #fafafa;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -77,9 +85,9 @@ li {
 }
 
 .headline-main {
-    font-size: 250%;
+    font-size: 9rem;
     font-weight: 400;
-    letter-spacing: 81px;
+    letter-spacing: 8.1rem;
 
     animation: moveInLeft 2s ease-out;
     -webkit-animation: moveInLeft 2s ease-out;
@@ -87,9 +95,9 @@ li {
 }
 
 .headline-sub {
-    font-size: 80%;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 10px;
+    letter-spacing: 1rem;
 
     animation: moveInRight 2s ease-out;
     -webkit-animation: moveInRight 2s ease-out;
@@ -103,8 +111,9 @@ li {
 .btn:visited {
     display: inline-block;
     text-transform: uppercase;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     position: relative;
+    font-size: 1.6rem;
 
     border-radius: 150px;
     -webkit-border-radius: 150px;
@@ -120,23 +129,21 @@ li {
 }
 
 .btn:hover {
-    transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    transform: translateY(-0.05rem);
+    -webkit-transform: translateY(-0.05rem);
+    -moz-transform: translateY(-0.05rem);
+    -ms-transform: translateY(-0.05rem);
+    -o-transform: translateY(-0.05rem);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .2);
 }
 
 .btn:active {
-    transform: translateY(-2px);
-    -webkit-transform: translateY(-2px);
-    -moz-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
-    -o-transform: translateY(-2px);
-
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    transform: translateY(-0.02rem);
+    -webkit-transform: translateY(-0.02rem);
+    -moz-transform: translateY(-0.02rem);
+    -ms-transform: translateY(-0.02rem);
+    -o-transform: translateY(-0.02rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -154,12 +161,12 @@ li {
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    -ms-border-radius: 150px;
-    -o-border-radius: 150px;
 
+    border-radius: 15rem;
+    -webkit-border-radius: 15rem;
+    -moz-border-radius: 15rem;
+    -ms-border-radius: 15rem;
+    -o-border-radius: 15rem;
     transition: all .7s;
     -webkit-transition: all .7s;
     -moz-transition: all .7s;
@@ -196,19 +203,19 @@ li {
     0% {
         opacity: 0;
 
-        transform: translateX(-150px);
-        -webkit-transform: translateX(-150px);
-        -moz-transform: translateX(-150px);
-        -ms-transform: translateX(-150px);
-        -o-transform: translateX(-150px);
+        transform: translateX(-15rem);
+        -webkit-transform: translateX(-15rem);
+        -moz-transform: translateX(-15rem);
+        -ms-transform: translateX(-15rem);
+        -o-transform: translateX(-15rem);
     }
 
     80% {
-        transform: translateX(15px);
-        -webkit-transform: translateX(15px);
-        -moz-transform: translateX(15px);
-        -ms-transform: translateX(15px);
-        -o-transform: translateX(15px);
+        transform: translateX(1.5rem);
+        -webkit-transform: translateX(1.5rem);
+        -moz-transform: translateX(1.5rem);
+        -ms-transform: translateX(1.5rem);
+        -o-transform: translateX(1.5rem);
     }
 
     100% {
@@ -226,19 +233,19 @@ li {
     0% {
         opacity: 0;
 
-        transform: translateX(150px);
-        -webkit-transform: translateX(150px);
-        -moz-transform: translateX(150px);
-        -ms-transform: translateX(150px);
-        -o-transform: translateX(150px);
-    }
+        transform: translateX(15rem);
+        -webkit-transform: translateX(15rem);
+        -moz-transform: translateX(15rem);
+        -ms-transform: translateX(15rem);
+        -o-transform: translateX(15rem);
+}
 
     80% {
-        transform: translateX(-15px);
-        -webkit-transform: translateX(-15px);
-        -moz-transform: translateX(-15px);
-        -ms-transform: translateX(-15px);
-        -o-transform: translateX(-15px);
+        transform: translateX(-1.5rem);
+        -webkit-transform: translateX(-1.5rem);
+        -moz-transform: translateX(-1.5rem);
+        -ms-transform: translateX(-1.5rem);
+        -o-transform: translateX(-1.5rem);
     }
 
     100% {
@@ -255,12 +262,13 @@ li {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(100px);
-        -webkit-transform: translateY(100px);
-        -moz-transform: translateY(100px);
-        -ms-transform: translateY(100px);
-        -o-transform: translateY(100px);
-}
+
+        transform: translateY(10rem);
+        -webkit-transform: translateY(10rem);
+        -moz-transform: translateY(10rem);
+        -ms-transform: translateY(10rem);
+        -o-transform: translateY(10rem);
+    }
 
     100% {
         opacity: 1;
@@ -270,5 +278,5 @@ li {
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-}
+    }
 }
