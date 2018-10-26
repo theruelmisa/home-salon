@@ -6,22 +6,10 @@
   box-sizing: inherit; }
 
 html {
-  /* Set the root font-size to a percentage in case of user browser change . This is 10px */
   font-size: 62.5%; }
 
 body {
-  font-family: 'Krub', sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
-  padding: 3rem;
   box-sizing: border-box; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
-
-li {
-  list-style: none; }
 
 @keyframes moveInLeft {
   0% {
@@ -82,6 +70,19 @@ li {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0); } }
+
+body {
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 3rem; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+li {
+  list-style: none; }
 
 .headline {
   color: #F2DFE8;
@@ -172,6 +173,30 @@ li {
     -webkit-animation: moveInBottom .7s ease-out .75s;
     /* To automatically apply styles to 0% before animation start */
     animation-fill-mode: backwards; }
+
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orange;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
 
 .header {
   height: 95vh;
