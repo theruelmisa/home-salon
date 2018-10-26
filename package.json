@@ -1,0 +1,22 @@
+{
+  "name": "home-salon",
+  "version": "1.0.0",
+  "description": "Landing Page for Home Salon ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruemisa/home-salon.git"
+  },
+  "author": "Ruel Alfonso Misa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruemisa/home-salon/issues"
+  },
+  "homepage": "https://github.com/ruemisa/home-salon#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
