@@ -4,7 +4,7 @@
   "description": "Landing Page for Home Salon ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass ./resources/SASS/main.scss ./resources/CSS/style.css -w"
   },
   "repository": {
     "type": "git",
