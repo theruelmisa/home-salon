@@ -47,17 +47,17 @@ li {
     position: relative;
 }
 
-.logo-container {
+.header__logo-container {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 7rem;
 }
 
-.headline-container {
+.header__headline-container {
     position: absolute;
     top: 35%;
     left: 50%;
@@ -79,12 +79,12 @@ li {
     -webkit-backface-visibility: hidden;
 }
 
-.headline-main,
-.headline-sub {
+.headline--main,
+.headline--sub {
     display: block;
 }
 
-.headline-main {
+.headline--main {
     font-size: 9rem;
     font-weight: 400;
     letter-spacing: 8.1rem;
@@ -94,7 +94,7 @@ li {
     
 }
 
-.headline-sub {
+.headline--sub {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 1rem;
@@ -146,7 +146,7 @@ li {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
 }
 
-.btn-white {
+.btn--white {
     background-color: #F2DFE8;
     color: #777;
 }
@@ -174,7 +174,7 @@ li {
     -o-transition: all .7s;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: #F2DFE8;
 }
 
@@ -188,7 +188,7 @@ li {
     -o-transform: scaleX(1.4) scaleY(1.6);
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom .7s ease-out .75s;
     -webkit-animation: moveInBottom .7s ease-out .75s;
     /* To automatically apply styles to 0% before animation start */
