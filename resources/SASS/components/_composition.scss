@@ -1,0 +1,55 @@
+.composition {
+    position: relative;
+
+    &__img {
+        width: 70%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        position: absolute;
+        z-index: 5;
+        // outline-offset: 2rem;
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+
+        &--p1 {
+            left: 0;
+            top: 10rem;
+        }
+
+        &--p2 {
+            left: 30%;
+            top: 5rem;
+        }
+
+        &--p3 {
+            right: -20rem;
+            top: -2rem;
+        }
+        
+        &:hover {
+            //outline: 1rem solid $color-main;
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
+            z-index: 10;
+            transform: scale(1.02) translateY(-1rem);
+            -webkit-transform: scale(1.02) translateY(-1rem);
+            -moz-transform: scale(1.02) translateY(-1rem);
+            -ms-transform: scale(1.02) translateY(-1rem);
+            -o-transform: scale(1.02) translateY(-1rem);
+        }
+    }
+    // Hover on parent element, then select images that are not hovered
+    &:hover &__img:not(:hover) {
+        transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        -o-transform: scale(0.95);
+    }
+}

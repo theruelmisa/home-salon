@@ -5,7 +5,7 @@
         text-transform: uppercase;
         padding: 1.5rem 4rem;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $font-size-default;
     
         border-radius: 150px;
         -webkit-border-radius: 150px;
@@ -21,14 +21,15 @@
     }
     
     &:hover {
-        transform: translateY(-0.05rem);
-        -webkit-transform: translateY(-0.05rem);
-        -moz-transform: translateY(-0.05rem);
-        -ms-transform: translateY(-0.05rem);
-        -o-transform: translateY(-0.05rem);
+        transform: translateY(-0.5rem);
+        -webkit-transform: translateY(-0.5rem);
+        -moz-transform: translateY(-0.5rem);
+        -ms-transform: translateY(-0.5rem);
+        -o-transform: translateY(-0.5rem);
         box-shadow: 0 1rem 1.5rem rgba($color-black, .2);
-
-        &::after {
+        
+        
+        &:after {
             opacity: 0;
         
             transform: scaleX(1.4) scaleY(1.6);
@@ -40,17 +41,17 @@
     }
     
     &:active {
-        transform: translateY(-0.02rem);
-        -webkit-transform: translateY(-0.02rem);
-        -moz-transform: translateY(-0.02rem);
-        -ms-transform: translateY(-0.02rem);
-        -o-transform: translateY(-0.02rem);
+        transform: translateY(-0.2rem);
+        -webkit-transform: translateY(-0.2rem);
+        -moz-transform: translateY(-0.2rem);
+        -ms-transform: translateY(-0.2rem);
+        -o-transform: translateY(-0.2rem);
         box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
     }
     
     &--white {
         background-color: $color-white;
-        color: $color-dark-grey;
+        color: $color-grey-dark;
 
         &::after {
             background-color: $color-white;
@@ -86,5 +87,36 @@
         -webkit-animation: moveInBottom .7s ease-out .75s;
         /* To automatically apply styles to 0% before animation start */
         animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        display: inline-block;
+        color: $color-main;
+        border-bottom: 0.1rem solid $color-main;
+        padding: 1rem;
+        font-size: $font-size-default;
+    }
+
+    &:hover {
+        background-color: $color-main;
+        color: $color-white;
+        box-shadow: 0 1rem 1.5rem rgba($color-black, .2);
+        transform: translateY(-0.2rem);
+        -webkit-transform: translateY(-0.2rem);
+        -moz-transform: translateY(-0.2rem);
+        -ms-transform: translateY(-0.2rem);
+        -o-transform: translateY(-0.2rem);
+    }
+
+    &:active {
+        box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
     }
 }

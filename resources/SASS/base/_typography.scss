@@ -1,7 +1,7 @@
 body {
     font-family: 'Krub', sans-serif;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.5;
     padding: 3rem;
 }
 
@@ -39,5 +39,45 @@ li {
 
         animation: moveInRight 2s ease-out;
         -webkit-animation: moveInRight 2s ease-out;
+    }
+}
+
+.headline-secondary {
+    display: inline-block;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-main, $color-main-dark);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    
+    &:hover {
+        transform: skewY(-5deg) skewX(-25deg) scale(1.2);
+        -webkit-transform: skewY(-5deg) skewX(-25deg) scale(1.2);
+        -moz-transform: skewY(-5deg) skewX(-25deg) scale(1.2);
+        -ms-transform: skewY(-5deg) skewX(-25deg) scale(1.2);
+        -o-transform: skewY(-5deg) skewX(-25deg) scale(1.2);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, .3);
+    }
+}
+
+.headline-tertiary {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.copy-full {
+    font-size: $font-size-default;
+
+    &:not(:last-child) {
+        margin-bottom: 3.5rem;
     }
 }
