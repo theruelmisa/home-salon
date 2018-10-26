@@ -1,9 +1,3 @@
-/*-------------------------------------------*/
-/*----------------VARIABLES------------------*/
-/*-------------------------------------------*/
-/*-------------------------------------------*/
-/*------------GLOBAL SETUP-------------------*/
-/*-------------------------------------------*/
 *,
 *::before,
 *::after {
@@ -29,33 +23,65 @@ a {
 li {
   list-style: none; }
 
-/*-------------------------------------------*/
-/*------------------HEADER-------------------*/
-/*-------------------------------------------*/
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right, rgba(242, 223, 232, 0.7), rgba(255, 51, 153, 0.7)), url(../img/hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  position: relative; }
-  .header__logo-container {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 7rem; }
-  .header__headline-container {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    text-align: center; }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+    -webkit-transform: translateX(-15rem);
+    -moz-transform: translateX(-15rem);
+    -ms-transform: translateX(-15rem);
+    -o-transform: translateX(-15rem); }
+  80% {
+    transform: translateX(1.5rem);
+    -webkit-transform: translateX(1.5rem);
+    -moz-transform: translateX(1.5rem);
+    -ms-transform: translateX(1.5rem);
+    -o-transform: translateX(1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem);
+    -webkit-transform: translateX(15rem);
+    -moz-transform: translateX(15rem);
+    -ms-transform: translateX(15rem);
+    -o-transform: translateX(15rem); }
+  80% {
+    transform: translateX(-1.5rem);
+    -webkit-transform: translateX(-1.5rem);
+    -moz-transform: translateX(-1.5rem);
+    -ms-transform: translateX(-1.5rem);
+    -o-transform: translateX(-1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+    -webkit-transform: translateY(10rem);
+    -moz-transform: translateY(10rem);
+    -ms-transform: translateY(10rem);
+    -o-transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0); } }
 
 .headline {
   color: #F2DFE8;
@@ -78,9 +104,6 @@ li {
     animation: moveInRight 2s ease-out;
     -webkit-animation: moveInRight 2s ease-out; }
 
-/*-------------------------------------------*/
-/*------------------BUTTONS------------------*/
-/*-------------------------------------------*/
 .btn {
   /* Some Button Hover Effect */ }
   .btn:link, .btn:visited {
@@ -150,65 +173,27 @@ li {
     /* To automatically apply styles to 0% before animation start */
     animation-fill-mode: backwards; }
 
-/*-------------------------------------------*/
-/*----------------ANIMATIONS-----------------*/
-/*-------------------------------------------*/
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-15rem);
-    -webkit-transform: translateX(-15rem);
-    -moz-transform: translateX(-15rem);
-    -ms-transform: translateX(-15rem);
-    -o-transform: translateX(-15rem); }
-  80% {
-    transform: translateX(1.5rem);
-    -webkit-transform: translateX(1.5rem);
-    -moz-transform: translateX(1.5rem);
-    -ms-transform: translateX(1.5rem);
-    -o-transform: translateX(1.5rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(15rem);
-    -webkit-transform: translateX(15rem);
-    -moz-transform: translateX(15rem);
-    -ms-transform: translateX(15rem);
-    -o-transform: translateX(15rem); }
-  80% {
-    transform: translateX(-1.5rem);
-    -webkit-transform: translateX(-1.5rem);
-    -moz-transform: translateX(-1.5rem);
-    -ms-transform: translateX(-1.5rem);
-    -o-transform: translateX(-1.5rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-    -webkit-transform: translateY(10rem);
-    -moz-transform: translateY(10rem);
-    -ms-transform: translateY(10rem);
-    -o-transform: translateY(10rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0); } }
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right, rgba(242, 223, 232, 0.7), rgba(255, 51, 153, 0.7)), url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  position: relative; }
+  .header__logo-container {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 7rem; }
+  .header__headline-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center; }
