@@ -446,7 +446,7 @@ li {
   padding: 5rem;
   padding-left: 10rem;
   box-shadow: 0 2.5rem 6rem rgba(55, 35, 44, 0.2);
-  background-color: #F2DFE8;
+  background-color: rgba(242, 223, 232, 0.7);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -517,6 +517,21 @@ li {
     -ms-transform: translateX(-1rem) scale(1.05);
     -o-transform: translateX(-1rem) scale(1.05);
     filter: blur(0.3rem) brightness(70%); }
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .35;
+  overflow: hidden; }
+  .background-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover; }
 
 .row {
   max-width: 114rem;
@@ -597,4 +612,4 @@ li {
 
 .section-testimonials {
   padding: 10rem 0;
-  background-color: #f7f7f7; }
+  position: relative; }
