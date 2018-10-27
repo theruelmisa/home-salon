@@ -310,6 +310,47 @@ li {
     -ms-transform: translateY(-3rem) scale(1.05);
     -o-transform: translateY(-3rem) scale(1.05); }
 
+.card {
+  height: 50rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative; }
+  .card__side {
+    height: 50rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+    .card__side--front {
+      background-color: #fdfdfd; }
+    .card__side--back {
+      background-color: blue;
+      transform: rotateX(180deg);
+      -webkit-transform: rotateX(180deg);
+      -moz-transform: rotateX(180deg);
+      -ms-transform: rotateX(180deg);
+      -o-transform: rotateX(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -366,9 +407,8 @@ li {
   padding: 20rem 0;
   background-image: linear-gradient(to right, rgba(242, 223, 232, 0.7), rgba(255, 51, 153, 0.7)), url(../img/hairstyling.jpg);
   background-size: cover;
-  background-position: 50% 25%;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   transform-origin: 0% 0%;
   margin-top: -25rem;
   transform: skewY(7deg);
@@ -382,3 +422,7 @@ li {
     -moz-transform: skewY(-7deg);
     -ms-transform: skewY(-7deg);
     -o-transform: skewY(-7deg); }
+
+.section-stylists {
+  background-color: #f7f7f7;
+  padding: 30rem 0 60rem 0; }

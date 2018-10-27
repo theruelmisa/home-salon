@@ -1,0 +1,52 @@
+.card {
+    height: 50rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+
+    &__side {
+        height: 50rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+
+        &--front {
+            background-color: #fdfdfd;
+        }
+
+        &--back {
+            background-color: blue;
+            transform: rotateX(180deg);
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+    }
+}
