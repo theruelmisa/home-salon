@@ -3,3 +3,30 @@
     padding: 35rem 0;
     margin-top: -25vh;
 }
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right, rgba($color-white,.7) , rgba($color-main, 0.7)), url(../img/hairstyling.jpg);
+    background-size: cover;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    // This allows the linear-gradient to remain constant while parallaxing on the img
+    transform-origin: 0% 0%;
+    margin-top: -25rem;
+    
+    transform: skewY(7deg);
+    -webkit-transform: skewY(7deg);
+    -moz-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
+    -o-transform: skewY(7deg);
+
+    // Selecting direct children of this section to re-skew them to a straight line
+    & > * {
+        transform: skewY(-7deg);
+        -webkit-transform: skewY(-7deg);
+        -moz-transform: skewY(-7deg);
+        -ms-transform: skewY(-7deg);
+        -o-transform: skewY(-7deg);
+    }
+}

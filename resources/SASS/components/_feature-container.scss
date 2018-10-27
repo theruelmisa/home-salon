@@ -1,0 +1,30 @@
+.feature-container {
+    background-color: rgba($color-white, .8);
+    font-size: $font-size-default;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+
+    &__icon {
+        font-size: 6rem;
+        background-image: linear-gradient(to right, $color-main, $color-main-dark);
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        transform: translateY(-3rem) scale(1.05);
+        -webkit-transform: translateY(-3rem) scale(1.05);
+        -moz-transform: translateY(-3rem) scale(1.05);
+        -ms-transform: translateY(-3rem) scale(1.05);
+        -o-transform: translateY(-3rem) scale(1.05);
+    }
+}

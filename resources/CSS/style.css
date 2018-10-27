@@ -285,6 +285,31 @@ li {
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95); }
 
+.feature-container {
+  background-color: rgba(242, 223, 232, 0.8);
+  font-size: 1.6rem;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgba(55, 35, 44, 0.2);
+  transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -ms-transition: transform .5s;
+  -o-transition: transform .5s; }
+  .feature-container__icon {
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #FF3399, #8F0044);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-container:hover {
+    transform: translateY(-3rem) scale(1.05);
+    -webkit-transform: translateY(-3rem) scale(1.05);
+    -moz-transform: translateY(-3rem) scale(1.05);
+    -ms-transform: translateY(-3rem) scale(1.05);
+    -o-transform: translateY(-3rem) scale(1.05); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -336,3 +361,24 @@ li {
   background-color: #f7f7f7;
   padding: 35rem 0;
   margin-top: -25vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, rgba(242, 223, 232, 0.7), rgba(255, 51, 153, 0.7)), url(../img/hairstyling.jpg);
+  background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transform-origin: 0% 0%;
+  margin-top: -25rem;
+  transform: skewY(7deg);
+  -webkit-transform: skewY(7deg);
+  -moz-transform: skewY(7deg);
+  -ms-transform: skewY(7deg);
+  -o-transform: skewY(7deg); }
+  .section-features > * {
+    transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -ms-transform: skewY(-7deg);
+    -o-transform: skewY(-7deg); }
