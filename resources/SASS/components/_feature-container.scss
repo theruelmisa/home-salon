@@ -3,7 +3,7 @@
     font-size: $font-size-default;
     padding: 2.5rem;
     text-align: center;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    box-shadow: $shadow-5;
     
     transition: transform .5s;
     -webkit-transition: transform .5s;

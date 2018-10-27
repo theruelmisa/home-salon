@@ -26,7 +26,7 @@
         -moz-transform: translateY(-0.5rem);
         -ms-transform: translateY(-0.5rem);
         -o-transform: translateY(-0.5rem);
-        box-shadow: 0 1rem 1.5rem rgba($color-black, .2);
+        box-shadow: $shadow-1;
         
         
         &:after {
@@ -46,7 +46,7 @@
         -moz-transform: translateY(-0.2rem);
         -ms-transform: translateY(-0.2rem);
         -o-transform: translateY(-0.2rem);
-        box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
+        box-shadow: $shadow-2;
     }
     
     &--white {
@@ -103,7 +103,7 @@
     &:hover {
         background-color: $color-main;
         color: $color-white;
-        box-shadow: 0 1rem 1.5rem rgba($color-black, .2);
+        box-shadow: $shadow-1;
         transform: translateY(-0.2rem);
         -webkit-transform: translateY(-0.2rem);
         -moz-transform: translateY(-0.2rem);
@@ -112,7 +112,7 @@
     }
 
     &:active {
-        box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
+        box-shadow: $shadow-2;
         transform: translateY(0);
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);

@@ -1,4 +1,7 @@
 .card {
+
+    // MAIN CARD FUNCTIONALITY AND STYLING 
+
     height: 50rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -13,33 +16,51 @@
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
+        transition: all 1.5s ease;
+        -webkit-transition: all 1.5s ease;
+        -moz-transition: all 1.5s ease;
+        -ms-transition: all 1.5s ease;
+        -o-transition: all 1.5s ease;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        // To contain images within the card
+        overflow: hidden;
+        box-shadow: $shadow-5;
         
-        transition: all 1s ease;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        -o-transition: all 1s ease;
-
         &--front {
             background-color: #fdfdfd;
         }
 
         &--back {
-            background-color: blue;
             transform: rotateX(180deg);
             -webkit-transform: rotateX(180deg);
             -moz-transform: rotateX(180deg);
             -ms-transform: rotateX(180deg);
             -o-transform: rotateX(180deg);
+            
+            &-1 {
+                background-image: linear-gradient(to right top, $color-secondary-light, $color-secondary-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right top, $color-tertiary-light, $color-tertiary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right top, $color-quaternary-light, $color-quaternary-dark);
+            }
         }
     }
 
     &:hover &__side--front {
-        transform: rotateX(180deg);
-        -webkit-transform: rotateX(180deg);
-        -moz-transform: rotateX(180deg);
-        -ms-transform: rotateX(180deg);
-        -o-transform: rotateX(180deg);
+        transform: rotateX(-180deg);
+        -webkit-transform: rotateX(-180deg);
+        -moz-transform: rotateX(-180deg);
+        -ms-transform: rotateX(-180deg);
+        -o-transform: rotateX(-180deg);
     }
 
     &:hover &__side--back {
@@ -48,5 +69,25 @@
         -moz-transform: rotateX(0deg);
         -ms-transform: rotateX(0deg);
         -o-transform: rotateX(0deg);
+    }
+
+    // FRONT STYLING
+
+    &__img {
+        background-size: cover;
+        height: 25rem;
+        background-blend-mode: multiply;
+
+        &--1 {
+            background-image: linear-gradient(to right top, $color-secondary-light, $color-secondary-dark), url(../img/stylist-1.jpeg);
+        }
+        
+        &--2 {
+            background-image: linear-gradient(to right top, $color-tertiary-light, $color-tertiary-dark), url(../img/stylist-2.jpeg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right top, $color-quaternary-light, $color-quaternary-dark), url(../img/stylist-3.jpeg);
+        }
     }
 }

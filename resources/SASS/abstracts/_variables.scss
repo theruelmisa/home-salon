@@ -1,16 +1,37 @@
 // Colors
 $color-main: #FF3399;
 $color-main-dark: #8F0044; 
+
+$color-secondary-light: #68d7be;
+$color-secondary-dark: #31b99a;
+
+
+$color-tertiary-light: #82d3ff;
+$color-tertiary-dark: #2db5ff;
+
+$color-quaternary-light: #d6a252;
+$color-quaternary-dark: #ab7728;
+
 $color-white: #F2DFE8;
 $color-black: #37232C; 
 $color-grey-dark: #777;
 $color-grey-light-1: #f7f7f7 ;
 
+
+
 // Font Sizes
 $font-size-default: 1.6rem;
+
+// Box Shadows
+$shadow-1: 0 1rem 1.5rem rgba($color-black, .2);
+$shadow-2: 0 0.5rem 1rem rgba($color-black, .2);
+
+$shadow-3: 0 1.5rem 4rem rgba($color-black, .4);
+$shadow-4: 0 2.5rem 4rem rgba($color-black, .6);
+
+$shadow-5: 0 1.5rem 4rem rgba($color-black, .2);
 
 // Grid
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
-

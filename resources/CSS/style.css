@@ -324,32 +324,54 @@ li {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease; }
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(55, 35, 44, 0.2); }
     .card__side--front {
       background-color: #fdfdfd; }
     .card__side--back {
-      background-color: blue;
       transform: rotateX(180deg);
       -webkit-transform: rotateX(180deg);
       -moz-transform: rotateX(180deg);
       -ms-transform: rotateX(180deg);
       -o-transform: rotateX(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right top, #68d7be, #31b99a); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right top, #82d3ff, #2db5ff); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right top, #d6a252, #ab7728); }
   .card:hover .card__side--front {
-    transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg);
-    -o-transform: rotateX(180deg); }
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg); }
   .card:hover .card__side--back {
     transform: rotateX(0deg);
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
     -ms-transform: rotateX(0deg);
     -o-transform: rotateX(0deg); }
+  .card__img {
+    background-size: cover;
+    height: 25rem;
+    background-blend-mode: multiply; }
+    .card__img--1 {
+      background-image: linear-gradient(to right top, #68d7be, #31b99a), url(../img/stylist-1.jpeg); }
+    .card__img--2 {
+      background-image: linear-gradient(to right top, #82d3ff, #2db5ff), url(../img/stylist-2.jpeg); }
+    .card__img--3 {
+      background-image: linear-gradient(to right top, #d6a252, #ab7728), url(../img/stylist-3.jpeg); }
 
 .row {
   max-width: 114rem;
