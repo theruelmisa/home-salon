@@ -141,5 +141,41 @@
                 }
             }
         }
+
+        &-star-color {
+            color: #eab415;
+        }
     }
+
+    // BACK STYLING 
+    &__cta {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    &__price-container {
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-rate {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 200;
+    }
+
 }
