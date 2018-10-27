@@ -26,10 +26,11 @@
         -moz-border-radius: 0.5rem;
         -ms-border-radius: 0.5rem;
         -o-border-radius: 0.5rem;
-        // To contain images within the card
-        overflow: hidden;
+
         box-shadow: $shadow-5;
-        
+        //To contain images within the card
+        overflow: hidden;
+
         &--front {
             background-color: #fdfdfd;
         }
@@ -77,6 +78,9 @@
         background-size: cover;
         height: 25rem;
         background-blend-mode: multiply;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+        
 
         &--1 {
             background-image: linear-gradient(to right top, $color-secondary-light, $color-secondary-dark), url(../img/stylist-1.jpeg);

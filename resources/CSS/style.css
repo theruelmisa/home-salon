@@ -334,8 +334,8 @@ li {
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(55, 35, 44, 0.2); }
+    box-shadow: 0 1.5rem 4rem rgba(55, 35, 44, 0.2);
+    overflow: hidden; }
     .card__side--front {
       background-color: #fdfdfd; }
     .card__side--back {
@@ -365,7 +365,9 @@ li {
   .card__img {
     background-size: cover;
     height: 25rem;
-    background-blend-mode: multiply; }
+    background-blend-mode: multiply;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%); }
     .card__img--1 {
       background-image: linear-gradient(to right top, #68d7be, #31b99a), url(../img/stylist-1.jpeg); }
     .card__img--2 {
@@ -401,6 +403,7 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   position: relative; }
   .header__logo-container {
