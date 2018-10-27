@@ -374,6 +374,36 @@ li {
       background-image: linear-gradient(to right top, #82d3ff, #2db5ff), url(../img/stylist-2.jpeg); }
     .card__img--3 {
       background-image: linear-gradient(to right top, #d6a252, #ab7728), url(../img/stylist-3.jpeg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #F2DFE8;
+    position: absolute;
+    top: 12rem;
+    left: 3rem;
+    width: 50%; }
+  .card__heading-break {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; }
+    .card__heading-break--1 {
+      background-image: linear-gradient(to right top, rgba(104, 215, 190, 0.7), rgba(49, 185, 154, 0.7)); }
+    .card__heading-break--2 {
+      background-image: linear-gradient(to right top, rgba(130, 211, 255, 0.7), rgba(45, 181, 255, 0.7)); }
+    .card__heading-break--3 {
+      background-image: linear-gradient(to right top, rgba(214, 162, 82, 0.7), rgba(171, 119, 40, 0.7)); }
+  .card__details {
+    padding: 3.5rem; }
+    .card__details ul {
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 0.1rem solid #eee; }
 
 .row {
   max-width: 114rem;
@@ -402,7 +432,7 @@ li {
   background-image: linear-gradient(to right, rgba(242, 223, 232, 0.7), rgba(255, 51, 153, 0.7)), url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   position: relative; }
