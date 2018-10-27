@@ -1,0 +1,102 @@
+.testimonials {
+    font-size: $font-size-default;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem;
+    padding-left: 10rem;
+    box-shadow: $shadow-6;
+    background-color: $color-white;
+    
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+
+    transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+
+    transform-origin: 0% 0%;
+
+
+    &__shape {
+        background-color: orange;
+        width: 15rem;
+        height: 15rem;
+        position: relative;
+        float: left;
+        // To turn container for user pic into a circle
+        // Could probably just use border radius for this one though but wanted to try it out
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        // used shape-outside with clip-path to create a real circle
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        //Repositioned floated circle to the left
+        transform: translateX(-5rem) skewX(15deg);
+        -webkit-transform: translateX(-5rem) skewX(15deg);
+        -moz-transform: translateX(-5rem) skewX(15deg);
+        -ms-transform: translateX(-5rem) skewX(15deg) ;
+        -o-transform: translateX(-5rem) skewX(15deg) ;
+    }
+
+    &__user-img {
+        // set img to height of __shape
+        height: 100%;
+        // to center the image a bit more
+        transform: translateX(-1rem) scale(1.5);
+        -webkit-transform: translateX(-1rem) scale(1.5);
+        -moz-transform: translateX(-1rem) scale(1.5);
+        -ms-transform: translateX(-1rem) scale(1.5);
+        -o-transform: translateX(-1rem) scale(1.5);
+        transition: all .8s;
+    }
+
+    &__user-name {
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        -webkit-transform: translate(-50%, 10%);
+        -moz-transform: translate(-50%, 10%);
+        -ms-transform: translate(-50%, 10%);
+        -o-transform: translate(-50%, 10%);
+        opacity: 0;
+        transition: all .8s;
+        backface-visibility: hidden;
+    }
+
+    &__text-box {
+        transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+        -moz-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        -o-transform: skewX(15deg);
+    }
+    // Show user name on testimonial hover
+    &:hover &__user-name {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    &:hover &__user-img {
+        transform: translateX(-1rem) scale(1.05);
+        -webkit-transform: translateX(-1rem) scale(1.05);
+        -moz-transform: translateX(-1rem) scale(1.05);
+        -ms-transform: translateX(-1rem) scale(1.05);
+        -o-transform: translateX(-1rem) scale(1.05);
+        // to darken the img when hover so that text over it is shown clearly
+        filter: blur(0.3rem) brightness(70%);
+    }
+}
