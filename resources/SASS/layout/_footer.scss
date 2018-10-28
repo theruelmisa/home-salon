@@ -1,0 +1,117 @@
+.footer {
+    background-color: #232323;    
+    color: $color-grey-dark;
+    padding: 10rem 0;
+    font-size: $font-size-default;
+
+    &__nav {
+        display: inline-block;
+        border-left: 0.15rem solid $color-grey-dark;
+        padding-left: 2rem;
+    }
+
+    &__list {
+        &-item {
+            display: block;
+
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            display: inline-block;
+
+            transition: all .5s ease-in-out;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-main;
+            box-shadow: $shadow-7;
+
+            transform: translateX(4rem) scale(1.2);
+            -webkit-transform: translateX(4rem) scale(1.2);
+            -moz-transform: translateX(4rem) scale(1.2);
+            -ms-transform: translateX(4rem) scale(1.2);
+            -o-transform: translateX(4rem) scale(1.2);
+        }
+    }
+
+    &__logo-container,
+    &__social-nav,
+    &__copyright { text-align: center; }
+
+    &__logo-container {
+        color: $color-white;
+        margin-bottom: 3rem;
+    }
+
+    &__logo {
+        height: auto;
+        width: 12rem;
+        margin-bottom: 3rem;
+    }
+
+    &__logo-text {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
+    }
+
+    &__social-nav {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        &-list {
+            &-item {
+                display: inline-block;
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+    
+    &__social-link {
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            display: inline-block;
+
+            transition: all .5s ease-in-out;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+        }
+
+        &:hover {
+            color: $color-main;
+            text-shadow: 0.5rem 1.5rem 0.5em rgba($color-black, .6);;
+
+            transform: translateY(-1rem) scale(1.5);
+            -webkit-transform: translateY(-1rem) scale(1.5);
+            -moz-transform: translateY(-1rem) scale(1.5);
+            -ms-transform: translateY(-1rem) scale(1.5);
+            -o-transform: translateY(-1rem) scale(1.5);
+        }
+
+        &:active {
+            text-shadow: 0.5rem 0.5rem 0.1em rgba($color-black, .6);
+            transform: translateY(-0.5rem) scale(1.5);
+            -webkit-transform: translateY(-0.5rem) scale(1.5);
+            -moz-transform: translateY(-0.5rem) scale(1.5);
+            -ms-transform: translateY(-0.5rem) scale(1.5);
+            -o-transform: translateY(-0.5rem) scale(1.5);
+        }
+    }
+}
