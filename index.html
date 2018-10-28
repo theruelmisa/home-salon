@@ -309,6 +309,55 @@
 
         </section>
 
+        <!-- APPOINTMENT SECTION -->
+        <section class="section-appointment">
+            <div class="row">
+                <!-- APPOINTMENT FORM -->
+                <div class="appointment-container">
+                    <div class="appointment-container__form">
+                        <form action="#" method="POST" class="form">
+                                <div class="util-margin-bottom-medium">
+                                    <!-- FORM TITLE -->
+                                    <h2 class="headline-secondary">
+                                        Book an Appointment
+                                    </h2> 
+                                </div> 
+                                <!-- FORM CONTENT INPUTS -->
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                            <!-- CHOOSE CLIENT TYPE -->
+                            <div class="form__group util-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="returning" name="client">
+                                    <label for="returning" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Returning Client
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="new-client" name="client">
+                                    <label for="new-client" class="form__radio-label">
+                                        <!-- TO CREATE CUSTOM RADIO BUTTON -->
+                                        <span class="form__radio-button"></span>
+                                        New Client
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form__group">
+                                <button class="btn btn--teal">Next &rArr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER AREA -->
