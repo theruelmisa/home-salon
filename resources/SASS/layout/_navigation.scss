@@ -1,34 +1,128 @@
 .navigation {
-
+    // Checkbox for click hack
     &__checkbox {
         display: none;
     }
 
+    // Toggle Button
     &__toggler {
         position: fixed;
-        top: 7rem;
-        right: 7rem;
+        top: 6rem;
+        right: 6rem;
         background-color: $color-white;
-        height: 9rem;
-        width: 9rem;
+        box-shadow: $shadow-1;
+        text-align: center;
+        height: 7rem;
+        width: 7rem;
         z-index: 100;
+        cursor: pointer;
 
-        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        // Still trying to figure out how to add a nice shadow to this diamond. Might have to make a separate dive to act as the shadow lol 
+
+        // -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+        // filter: drop-shadow($shadow-2);
+        
     }
 
+    // Menu Background
     &__background {
         position: fixed;
-        top: 7.5rem;
-        right: 7.5rem;
+        top: 6.5rem;
+        right: 6.5rem;
         background-image: radial-gradient($color-main, $color-main-dark);
-        height: 8rem;
-        width: 8rem;
+        height: 6rem;
+        width: 6rem;
         z-index: 50;
 
-        -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
 
+        // Goes with the toggler
+        // -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        // clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+
+        transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+        -webkit-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+        -moz-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+        -ms-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+        -o-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    // Navigation Menu
+    &__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0;
+        opacity: 0;
+        z-index: 75;
+        text-align: center;
+
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -moz-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -ms-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
+    }
+
+    // Navigation List & items
+    &__list {
+        width: 100%;
+        @include position-center;
+
+        &-item {
+            margin: 2.5rem 0;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 300;
+            color: $color-white;
+            background-image: linear-gradient(60deg, $color-white 0%, $color-white 50%, transparent 50%);
+            background-size: 250%;
+            background-position: 100%;
+            padding: 1rem 2rem;
+
+            transition: all .6s ease-in-out;
+            -webkit-transition: all .6s ease-in-out;
+            -moz-transition: all .6s ease-in-out;
+            -ms-transition: all .6s ease-in-out;
+            -o-transition: all .6s ease-in-out;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 0%;
+            color: $color-main;
+
+            transform: translateX(2rem);
+            -webkit-transform: translateX(2rem);
+            -moz-transform: translateX(2rem);
+            -ms-transform: translateX(2rem);
+            -o-transform: translateX(2rem);
+        }
+        
+    }
+    // Checkbox hack for nav toggler using the general sibling selector
+    &__checkbox:checked ~ &__background {
         transform: scale(100);
         -webkit-transform: scale(100);
         -moz-transform: scale(100);
@@ -36,31 +130,63 @@
         -o-transform: scale(100);
     }
 
-    &__menu {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
+    &__checkbox:checked ~ &__menu {
         width: 100%;
-        z-index: 75;
-        text-align: center;
+        opacity: 1;
     }
 
-    &__list {
-        @include position-center;
-
-        &-item {
-            margin: 2rem 0;
+    // NAV icon
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+        
+        &,
+        &::before,
+        &::after {
+            display: inline-block;
+            width: 3rem;
+            height: 2px;
+            background-color: $color-main-dark;
         }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+
+            transition: all .15s ease-in-out;
+            -webkit-transition: all .15s ease-in-out;
+            -moz-transition: all .15s ease-in-out;
+            -ms-transition: all .15s ease-in-out;
+            -o-transition: all .15s ease-in-out;
+        }
+
+        &::before { top: -0.8rem; }
+        &::after { top: 0.8rem; }
     }
 
-    &__link {
-        text-transform: uppercase;
-        font-size: 3rem;
-        font-weight: 300;
-        color: $color-white;
-        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-        background-size: 100%;
-        padding: 1rem 2rem;
+    &__toggler:hover &__icon::before { top: -1rem; }
+    &__toggler:hover &__icon::after { top: 1rem; }
+
+    // To switch icon to X
+    &__checkbox:checked + &__toggler &__icon { background-color: transparent; }
+
+    &__checkbox:checked + &__toggler &__icon::before { 
+        top: 0;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__toggler &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
     }
 }   
