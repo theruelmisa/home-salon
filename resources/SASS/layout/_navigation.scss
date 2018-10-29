@@ -80,8 +80,8 @@
 
     // Navigation List & items
     &__list {
-        width: 100%;
         @include position-center;
+        width: 100%;
 
         &-item {
             margin: 2.5rem 0;

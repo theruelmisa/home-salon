@@ -16,12 +16,14 @@
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
 
+        <!-- TOGGLE BUTTON -->
         <label for="nav-toggle" class="navigation__toggler">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-
+        <!-- MENU BACKGROUND  -->
         <div class="navigation__background">&nbsp;</div>
 
+        <!-- ACTUAL NAV MENU -->
         <nav class="navigation__menu">
             <ul class="navigation__list">
                 <li class="navigation__list-item"><a href="#" class="navigation__link">About us</a></li>
@@ -136,7 +138,7 @@
 
         <!-- STYLIST SECTION -->
 
-        <section class="section-stylists">
+        <section class="section-stylists" id="section-stylists">
             <div class="util-center-text util-margin-bottom-big">
                 <!-- STYLIST SECTION TITLE -->
                 <h2 class="headline-secondary">
@@ -183,7 +185,7 @@
                                     <p class="card__price-rate">Rate</p>
                                     <p class="card__price-value">$40</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Stylist</a>
+                                <a href="#modal" class="btn btn--white">Book Stylist</a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +219,7 @@
                                     <p class="card__price-rate">Rate</p>
                                     <p class="card__price-value">$40</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Stylist</a>
+                                <a href="#modal" class="btn btn--white">Book Stylist</a>
                             </div>
                         </div>
                     </div>
@@ -251,7 +253,7 @@
                                     <p class="card__price-rate">Rate</p>
                                     <p class="card__price-value">$45</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Stylist</a>
+                                <a href="#modal" class="btn btn--white">Book Stylist</a>
                             </div>
                         </div>
                     </div>
@@ -414,8 +416,29 @@
                 </p>
             </div>
         </div>
-
     </footer>
+
+    <!-- MODAL CARD -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <!-- MODAL IMAGE -->
+            <div class="modal__left-side">
+                <img src="./resources/img/hairdryer.jpg" alt="Hair Dryer" class="modal__img">
+            </div>
+            <!-- MODAL TEXT CONTENT -->
+            <div class="modal__right-side">
+                <a href="#section-stylists" class="modal__close">&times;</a>
+                <h2 class="headline-secondary util-margin-bottom-small remove-headline-hover">Book an appointment today</h2>
+                <h3 class="headline-tertiary util-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <p class="modal__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat repellat et nisi ullam, facilis itaque possimus, ipsa inventore voluptates nulla saepe, ipsam sit dolorum odit quas pariatur illum laudantium? Nihil, quam libero similique excepturi nam eveniet, aliquid ipsum deserunt quas nemo totam ducimus et incidunt asperiores. Distinctio ab autem exercitationem animi. Minima impedit soluta, iure nam adipisci enim beatae.
+                </p>
+                <!-- LINK TO BOOKING -->
+                <a href="#" class="btn btn--pink">Set an appointment &rArr;</a>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
