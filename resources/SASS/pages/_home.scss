@@ -30,21 +30,37 @@
         -o-transform: skewY(-7deg);
         
     }
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
 }
 
 .section-stylists {
     background-color: $color-grey-light-1;
     padding: 30rem 0 10rem 0;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 5rem 0;
+    }
 }
 
 .section-testimonials {
     padding: 10rem 0;
     position: relative;
+
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
 }
 
 .section-appointment {
     padding: 10rem 0;
     background-image: linear-gradient(to right top, $color-main, $color-main-dark);
+
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
 }
 
 .appointment-container {

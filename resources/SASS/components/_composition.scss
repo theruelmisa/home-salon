@@ -18,19 +18,59 @@
         -ms-transition: all .5s;
         -o-transition: all .5s;
 
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.33%;
+            box-shadow: $shadow-1;
+        }
+
         &--p1 {
             left: 0;
             top: 10rem;
+
+            @include respond(tab-port) {
+                top: 0;
+
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
         }
 
         &--p2 {
             left: 30%;
             top: 5rem;
+
+            @include respond(tab-port) {
+                top: -1rem;
+                left: 0;
+                z-index: 10;
+
+                transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+            }
         }
 
         &--p3 {
             right: -20rem;
             top: -2rem;
+
+            @include respond(tab-port) {
+                top: 1rem;
+                right: 0;
+
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
         }
         
         &:hover {

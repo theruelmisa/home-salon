@@ -29,6 +29,16 @@
         // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
         // filter: drop-shadow($shadow-2);
+
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
         
     }
 
@@ -57,6 +67,16 @@
         -moz-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
         -ms-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
         -o-transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     // Navigation Menu

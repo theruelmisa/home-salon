@@ -4,10 +4,20 @@
     padding: 10rem 0;
     font-size: $font-size-default;
 
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
     &__nav {
         display: inline-block;
         border-left: 0.15rem solid $color-grey-dark;
         padding-left: 2rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+            border-left: none;
+        }
     }
 
     &__list {
@@ -17,6 +27,7 @@
             &:not(:last-child) {
                 margin-bottom: 2.5rem;
             }
+            
         }
     }
 
@@ -48,11 +59,22 @@
 
     &__logo-container,
     &__social-nav,
-    &__copyright { text-align: center; }
+    &__copyright { 
+        text-align: center; 
+    
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    
+    }
 
     &__logo-container {
         color: $color-white;
         margin-bottom: 3rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__logo {
