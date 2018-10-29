@@ -21,6 +21,19 @@
 
     transform-origin: 0% 0%;
 
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 3rem;
+        padding-left: 8rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+        -webkit-transform: skewX(0);
+        -moz-transform: skewX(0);
+        -ms-transform: skewX(0);
+        -o-transform: skewX(0);
+    }
 
     &__shape {
         background-color: orange;
@@ -41,6 +54,15 @@
         -moz-transform: translateX(-5rem) skewX(15deg);
         -ms-transform: translateX(-5rem) skewX(15deg) ;
         -o-transform: translateX(-5rem) skewX(15deg) ;
+
+        @include respond(phone) {
+            transform: translateX(-5rem) skewX(0);
+            -webkit-transform: translateX(-5rem) skewX(0);
+            -moz-transform: translateX(-5rem) skewX(0);
+            -ms-transform: translateX(-5rem) skewX(0);
+            -o-transform: translateX(-5rem) skewX(0);
+
+        }
     }
 
     &__user-img {
@@ -79,6 +101,14 @@
         -moz-transform: skewX(15deg);
         -ms-transform: skewX(15deg);
         -o-transform: skewX(15deg);
+
+        @include respond(phone) {
+            transform: skewX(0);
+            -webkit-transform: skewX(0);
+            -moz-transform: skewX(0);
+            -ms-transform: skewX(0);
+            -o-transform: skewX(0);
+        }
     }
     // Show user name on testimonial hover
     &:hover &__user-name {

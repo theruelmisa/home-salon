@@ -61,6 +61,11 @@
             right: -20rem;
             top: -2rem;
 
+            @include respond(tab-land) {
+                top: 20rem;
+                right: 3rem;
+            }
+
             @include respond(tab-port) {
                 top: 1rem;
                 right: 0;

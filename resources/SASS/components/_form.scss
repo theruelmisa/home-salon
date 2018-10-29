@@ -1,11 +1,15 @@
 .form {
-
+    
     // @include clearfix;
 
     &__group {
         
         &:not(:last-child) {
             margin-bottom: 3rem;
+        }
+
+        @include respond(tab-port) {
+            width: 250%;
         }
 
     }
@@ -32,6 +36,10 @@
         -moz-transition: all .5s;
         -ms-transition: all .5s;
         -o-transition: all .5s;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &:focus {
             outline: none;
@@ -76,6 +84,11 @@
         width: 49%;
         // float: left;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {

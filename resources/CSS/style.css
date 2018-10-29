@@ -366,6 +366,10 @@ li {
     .composition__img--p3 {
       right: -20rem;
       top: -2rem; }
+      @media (max-width: 75em) {
+        .composition__img--p3 {
+          top: 20rem;
+          right: 3rem; } }
       @media (max-width: 56.25em) {
         .composition__img--p3 {
           top: 1rem;
@@ -538,6 +542,49 @@ li {
   .card__price-value {
     font-size: 6rem;
     font-weight: 200; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      background-color: #fdfdfd;
+      box-shadow: 0 1.5rem 4rem rgba(12, 11, 12, 0.2); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateX(0);
+          -webkit-transform: rotateX(0);
+          -moz-transform: rotateX(0);
+          -ms-transform: rotateX(0);
+          -o-transform: rotateX(0);
+          clip-path: polygon(0 40%, 50% 0, 100% 40%, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateX(0);
+        -webkit-transform: rotateX(0);
+        -moz-transform: rotateX(0);
+        -ms-transform: rotateX(0);
+        -o-transform: rotateX(0); }
+      .card:hover .card__side--back {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg); }
+      .card__details {
+        padding: 1rem; }
+      .card__cta {
+        position: relative;
+        width: 100%;
+        margin-top: 15rem; }
+      .card__price-container {
+        margin-bottom: 2rem; }
+      .card__price-value {
+        font-size: 4rem; } }
 
 .testimonials {
   font-size: 1.6rem;
@@ -558,6 +605,18 @@ li {
   -ms-transform: skewX(-15deg);
   -o-transform: skewX(-15deg);
   transform-origin: 0% 0%; }
+  @media (max-width: 56.25em) {
+    .testimonials {
+      width: 100%;
+      padding: 3rem;
+      padding-left: 8rem; } }
+  @media (max-width: 37.5em) {
+    .testimonials {
+      transform: skewX(0);
+      -webkit-transform: skewX(0);
+      -moz-transform: skewX(0);
+      -ms-transform: skewX(0);
+      -o-transform: skewX(0); } }
   .testimonials__shape {
     background-color: orange;
     width: 15rem;
@@ -573,6 +632,13 @@ li {
     -moz-transform: translateX(-5rem) skewX(15deg);
     -ms-transform: translateX(-5rem) skewX(15deg);
     -o-transform: translateX(-5rem) skewX(15deg); }
+    @media (max-width: 37.5em) {
+      .testimonials__shape {
+        transform: translateX(-5rem) skewX(0);
+        -webkit-transform: translateX(-5rem) skewX(0);
+        -moz-transform: translateX(-5rem) skewX(0);
+        -ms-transform: translateX(-5rem) skewX(0);
+        -o-transform: translateX(-5rem) skewX(0); } }
   .testimonials__user-img {
     height: 100%;
     transform: translateX(-1rem) scale(1.5);
@@ -603,6 +669,13 @@ li {
     -moz-transform: skewX(15deg);
     -ms-transform: skewX(15deg);
     -o-transform: skewX(15deg); }
+    @media (max-width: 37.5em) {
+      .testimonials__text-box {
+        transform: skewX(0);
+        -webkit-transform: skewX(0);
+        -moz-transform: skewX(0);
+        -ms-transform: skewX(0);
+        -o-transform: skewX(0); } }
   .testimonials:hover .testimonials__user-name {
     opacity: 1;
     transform: translate(-50%, -50%);
@@ -636,6 +709,10 @@ li {
 .form__group:not(:last-child) {
   margin-bottom: 3rem; }
 
+@media (max-width: 56.25em) {
+  .form__group {
+    width: 250%; } }
+
 .form__input {
   display: block;
   width: 90%;
@@ -656,6 +733,9 @@ li {
   -moz-transition: all .5s;
   -ms-transition: all .5s;
   -o-transition: all .5s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 0.5rem 1rem rgba(12, 11, 12, 0.2);
@@ -688,6 +768,10 @@ li {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -778,17 +862,37 @@ li {
     -moz-transition: all .5s ease-in .2s;
     -ms-transition: all .5s ease-in .2s;
     -o-transition: all .5s ease-in .2s; }
+    @media (max-width: 56.25em) {
+      .modal__content {
+        display: block;
+        width: 80%;
+        height: 80%;
+        overflow: auto; } }
   .modal__left-side {
     display: table-cell;
     width: 33.33%; }
+    @media (max-width: 56.25em) {
+      .modal__left-side {
+        display: block;
+        width: 100%; } }
   .modal__right-side {
     display: table-cell;
     vertical-align: middle;
     width: 66.66%;
     padding: 2rem 7rem; }
+    @media (max-width: 56.25em) {
+      .modal__right-side {
+        display: block;
+        width: 100%;
+        text-align: center; } }
   .modal__img {
     display: block;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .modal__img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover; } }
   .modal__text {
     font-size: 1.6rem;
     margin-bottom: 5rem;
@@ -802,6 +906,10 @@ li {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .modal__text {
+        column-count: 1;
+        -moz-column-count: 2; } }
   .modal:target {
     opacity: 1;
     visibility: visible; }
@@ -1204,11 +1312,24 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 1.5rem 4rem rgba(12, 11, 12, 0.3);
+  margin: 0 auto;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem; }
+  @media (max-width: 75em) {
+    .appointment-container {
+      background-image: linear-gradient(100deg, rgba(242, 223, 232, 0.8) 0%, rgba(242, 223, 232, 0.8) 60%, transparent 60%), url(../img/form.jpg); } }
+  @media (max-width: 56.25em) {
+    .appointment-container {
+      background-image: linear-gradient(to right, rgba(242, 223, 232, 0.8) 0%, rgba(242, 223, 232, 0.8) 100%), url(../img/form.jpg); } }
   .appointment-container__form {
     width: 50%;
     padding: 5rem; }
+  @media (max-width: 75em) {
+    .appointment-container {
+      width: 80%; } }
+  @media (max-width: 56.25em) {
+    .appointment-container {
+      width: 100%; } }

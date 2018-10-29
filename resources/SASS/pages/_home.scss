@@ -74,14 +74,37 @@
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: $shadow-3;
+    margin: 0 auto;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
 
+    @include respond(tab-land) {
+        background-image: linear-gradient(100deg,rgba($color-white, .8) 0%,
+        rgba($color-white, .8) 60%,
+        transparent 60%), 
+        url(../img/form.jpg);
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .8) 0%,
+        rgba($color-white, .8) 100%), 
+        url(../img/form.jpg);
+    }
+
     &__form {
         width: 50%;
         padding: 5rem;
+    }
+
+    @include respond(tab-land) {
+        width: 80%;
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
     }
 }

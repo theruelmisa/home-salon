@@ -170,5 +170,66 @@
         font-weight: 200;
     }
 
+    @include respond(tab-port) {
+        height: auto;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        background-color: #fdfdfd;
+        box-shadow: $shadow-5;
+
+    
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+
+            &--back {
+                transform: rotateX(0);
+                -webkit-transform: rotateX(0);
+                -moz-transform: rotateX(0);
+                -ms-transform: rotateX(0);
+                -o-transform: rotateX(0);
+                clip-path: polygon(0 40%, 50% 0, 100% 40%, 100% 100%, 0 100%)
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateX(0);
+            -webkit-transform: rotateX(0);
+            -moz-transform: rotateX(0);
+            -ms-transform: rotateX(0);
+            -o-transform: rotateX(0);
+        }
+
+        &:hover &__side--back {
+            transform: rotateX(0deg);
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+        }
+
+        &__details {
+            padding: 1rem;
+        }
+
+        &__cta {
+            position: relative;
+            width: 100%;
+            margin-top: 15rem;
+        }
+
+        &__price-container {
+            margin-bottom: 2rem;
+        }
+
+        &__price-value {
+            font-size: 4rem;
+        }
+    }
+
 }
 
