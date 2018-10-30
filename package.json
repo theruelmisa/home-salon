@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass ./resources/SASS/main.scss ./resources/CSS/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
     "compile:sass": "node-sass ./resources/SASS/main.scss ./resources/CSS/style.comp.css",
     "concat:css": "concat -o ./resources/CSS/style.concat.css ./resources/CSS/icons.css ./resources/CSS/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./resources/CSS/style.concat.css -o ./resources/CSS/style.prefix.css",
