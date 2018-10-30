@@ -15,6 +15,14 @@
     -ms-transition: all .5s ease-in .2s;
     -o-transition: all .5s ease-in .2s;
 
+    // Just in case this works in Chrome
+    @supports(-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem)) {
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+        background-color: rgba($color-black, .3);
+
+    }
+
     &__content {
         @include position-center;
 
