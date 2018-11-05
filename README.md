@@ -99,6 +99,9 @@ This project also allowed me to familiarize myself with the 7-1 architecture. It
 
 * **background-video** by _Pixabay_ from Pexels
 
+**Design**
+
+* **Design Inspiraton** from _Jonas Schmedtmann_ of https://www.codingheroes.io/
 
 ### Author ###
 
