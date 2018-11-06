@@ -1,6 +1,6 @@
 # HOME SALON #
 
-**Home Salon** is a Single-page web application built using SASS, CSS, & HTML. It is designed for a Hair Styling in-call service done at the client's home. 
+**Home Salon** is a landing page layout that uses SASS, CSS, & HTML. It is designed for a company that provides hair care and styling services for clients at home. 
 
 ## Table of Contents ##
 
@@ -13,7 +13,7 @@
 
 ### Project Description ###
 
-The web app is designed for a myriad of customer types. Someone who recently moved into the city or neighborhood for example would be an ideal candidate. It saves that person the hassle of (1) looking for the perfect stylist, and (2) a salon that is pretty affordable. Another type would be those that just hate waiting for their turn at a salon. You could argue that people can set appointments. Yes, that is true. But there are circumstances that appointments are not really followed to the dot (like emergency cases or if the stylist enjoys the company of that other person more than you).
+This is a landing page layout for a web app that is designed for a myriad of customer types. Someone who recently moved into the city or neighborhood for example would be an ideal candidate. It saves that person the hassle of (1) looking for the perfect stylist, and (2) a salon that is pretty affordable. Another type would be those that just hate waiting for their turn at a salon. You could argue that people can set appointments. Yes, that is true. But there are circumstances that appointments are not really followed to the dot (like emergency cases or if the stylist enjoys the company of that other person more than you).
 
 **Video**
 
