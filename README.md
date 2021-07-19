@@ -1,4 +1,4 @@
-# HOME SALON #
+# HOME SALON # [![Netlify Status](https://api.netlify.com/api/v1/badges/27fdf775-0f11-4144-b471-b2490877e84b/deploy-status)](https://app.netlify.com/sites/salonathome/deploys)
 
 **Home Salon** is a landing page layout that uses SASS, CSS, & HTML. It is designed for a company that provides hair care and styling services for clients at home. 
 
@@ -15,11 +15,9 @@
 
 This is a landing page layout for a web app that is designed for a myriad of customer types. Someone who recently moved into the city or neighborhood for example would be an ideal candidate. It saves that person the hassle of (1) looking for the perfect stylist, and (2) a salon that is pretty affordable. Another type would be those that just hate waiting for their turn at a salon. You could argue that people can set appointments. Yes, that is true. But there are circumstances that appointments are not really followed to the dot (like emergency cases or if the stylist enjoys the company of that other person more than you).
 
-**Video**
+**Project Link**
 
-_Please click on the image below to load video of project_
-
-[![Home Salon Video](./img/app-pic-1.png)](https://www.useloom.com/share/8940940961ec4d06af127fc1f9b6966e)
+https://salonathome.netlify.app/
 
 ### Technologies Used ###
 
@@ -98,10 +96,6 @@ This project also allowed me to familiarize myself with the 7-1 architecture. It
 **Videos**
 
 * **background-video** by _Pixabay_ from Pexels
-
-**Design**
-
-* **Design Inspiraton** from _Jonas Schmedtmann_ of https://www.codingheroes.io/
 
 ### Author ###
 
